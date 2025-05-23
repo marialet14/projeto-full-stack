@@ -4,7 +4,7 @@
 
 Este é um site para uma **loja de roupas femininas**, com uma **landing page** inicial e uma página para **cadastro de produtos**.  
 O projeto foi desenvolvido usando **Python (Flask)** para o backend, com **SQLAlchemy** para gerenciar o banco de dados SQLite.  
-No frontend, utiliza **HTML**, **CSS** e **JavaScript** para implementar o CRUD de produtos (Criar, Ler, Atualizar e Deletar).
+No frontend, utiliza **HTML**, **CSS** e **JavaScript** para implementar o CRUD de produtos.
 
 ---
 
