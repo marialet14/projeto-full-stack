@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morena Canela</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="{{ url_for('static', filename='slide.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  
+  
+</head>
+
+<body>
+
+  <header class="navbar">
+    <ul class="menu">
+      <li><a href="">Início</a></li>
+      <li><a href="https://drive.google.com/file/d/1DTsdt22bHyWyCRd98MUe_Ls3fh0PEiE1/view?usp=sharing" target="_blank">Acessar Catálogo</a></li>
+      <li><a href="#modelos">Modelos</a></li>
+      <li><a href="#sobre-nos">Sobre nós</a></li>
+      <li><a href="{{ url_for('produtos_page') }}">Área do produtor</a></li>
+
+    </ul>
+  </header>
+
+  <main class="hero">
+    <div class="texto">
+      <img src="{{ url_for('static', filename='imagens/logo.png') }}"
+      width="100" height="100" alt="Logo Morena Canela" class="logo">
+      <p>Descubra sua nova peça favorita no nosso catálogo</p>
+
+      <div class="botoes">
+        <button class="bot rosa">CLIQUE AQUI</button>
+        <button class="bot transparente">SAIBA MAIS</button>
+      </div>
+
+    </div>
+
+    <div>
+      <img src="{{ url_for('static', filename='imagens/modelo.png') }}" 
+        alt="Modelo Morena Canela" class="modelo">
+    </div>
+  </main>
+
+  <div class="carrossel">
+    <section class="modelos" id="modelos"></section>
+    <h2>Modelos</h2>
+
+    <div class="slider">
+      <div class="slide ativo">
+        <img src="{{ url_for('static', filename='imagens/modelo1.png') }}" alt="Modelo 1">
+        <img src="{{ url_for('static', filename='imagens/modelo2.png') }}" alt="Modelo 2">
+        <img src="{{ url_for('static', filename='imagens/modelo3.png') }}" alt="Modelo 3">
+      </div>
+
+      <div class="slide">
+        <img src="{{ url_for('static', filename='imagens/modelo4.JPG') }}" alt="Modelo 4">
+        <img src="{{ url_for('static', filename='imagens/modelo5.jpg') }}" alt="Modelo 5">
+        <img src="{{ url_for('static', filename='imagens/modelo6.jpg') }}" alt="Modelo 6">
+      </div>
+
+      <div class="slide">
+        <img src="{{ url_for('static', filename='imagens/modelo7.jpg') }}" alt="Modelo 7">
+        <img src="{{ url_for('static', filename='imagens/modelo8.jpg') }}" alt="Modelo 8">
+        <img src="{{ url_for('static', filename='imagens/modelo9.jpg') }}" alt="Modelo 9">
+      </div>
+
+    </div>
+  
+    <div class="bolinhas">
+      <span class="bol ativo" onclick="mudaslide(0)"></span>
+      <span class="bol" onclick="mudaslide(1)"></span>
+      <span class="bol" onclick="mudaslide(2)"></span>
+    </div>
+
+  </div>
+
+  <section class="beneficios">
+    <h2>Por que explorar o catálogo?</h2>
+
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-shopping-basket"></i>
+        <h3>Peças únicas e de alta qualidade</h3>
+        <p>Cada item é cuidadosamente desenvolvido para garantir exclusividade e sofisticação.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-heart"></i>
+        <h3>Informações detalhadas para sua escolha</h3>
+        <p>Detalhes completos para ajudar na escolha da melhor peça.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Facilidade para encontrar o look</h3>
+        <p>Navegue por categorias e descubra combinações perfeitas para o seu estilo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="tres-imagens">
+    <div class="imagem">
+       <img src="{{ url_for('static', filename='imagens/modv1.jpg') }}" alt="Imagem 1">
+    </div>
+    <div class="imagem">
+      <img src="{{ url_for('static', filename='imagens/modv2.jpg') }}" alt="Imagem 2">
+    </div>
+    <div class="imagem">
+      <img src="{{ url_for('static', filename='imagens/modv3.jpg') }}" alt="Imagem 3">
+    </div>
+  </section>
+  
+  
+  <section class="sobre-nos" id="sobre-nos">
+    <h2>E sobre nós?</h2>
+    <div class="valores">
+      <div class="valor">
+        <div class="numero">01</div>
+        <h3>Fabricação própria desde 2022</h3>
+        <p>Exclusividade e qualidade em cada peça.</p>
+      </div>
+
+      <div class="valor">
+        <div class="numero">02</div>
+        <h3>Tecidos de ponta</h3>
+        <p>Maioria tecido linho ou tecido duna.</p>
+      </div>
+
+      <div class="valor">
+        <div class="numero">03</div>
+        <h3>Qualidade + Durabilidade</h3>
+        <p>Atenção aos detalhes em cada etapa de fabricação.</p>
+      </div>
+
+      <div class="valor">
+        <div class="numero">04</div>
+        <h3>Compromisso com a excelência</h3>
+        <p>Desde a escolha dos materiais até a entrega final para nossos clientes.</p>
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="contato">
+    <div class="info-contato">
+      <div class="texto">
+        <h2>Onde nós encontrar?</h2>
+        <p><strong>Caruaru, PE</strong></p>
+        <p><i class="fas fa-map-marker-alt"></i> Feira da sulanca, Av Azul - Rua 20</p>
+        <p><i class="fas fa-envelope"></i> lojamorenacanela@gmail.com</p>
+
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+      </div>
+
+      <div class="mapa">
+        <img src="{{ url_for('static', filename='imagens/mapa.png') }}" alt="Mapa de localização">
+      </div>
+
+    </div>
+  </section>
+  <script src="{{ url_for('static', filename='slide.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

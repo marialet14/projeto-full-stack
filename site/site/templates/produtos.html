@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+  <h2>Produtos</h2>
+  <input type="text" id="nomeProduto" placeholder="Nome do produto">
+  <input type="text" id="precoProduto" placeholder="Preço do produto">
+  <button onclick="cadastrarProduto()">Cadastrar</button>
+  
+  <h3>Lista de Produtos</h3>
+  <ul id="listaProdutos"></ul>
+
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
