@@ -1,4 +1,4 @@
-# Loja Morena Canela - Sistema de Cadastro de Produtos
+# Loja - Sistema de Cadastro de Produtos
 
 ## Descrição
 
