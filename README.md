@@ -20,7 +20,7 @@ No frontend, utiliza **HTML**, **CSS** e **JavaScript** para implementar o CRUD 
 
 ## Tecnologias usadas
 
-- Python 3.x  
+- Python 
 - Flask  
 - SQLAlchemy  
 - SQLite  
