@@ -28,17 +28,6 @@ No frontend, utiliza **HTML**, **CSS** e **JavaScript** para implementar o CRUD 
 - CSS3  
 - JavaScript (vanilla)
 
----
 
-## Considerações finais
-
-Este projeto é uma base simples e funcional para uma loja de roupas femininas, focada em demonstrar o uso integrado do Flask com SQLAlchemy, banco SQLite e frontend com HTML, CSS e JavaScript para operações CRUD.
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-## Contato
-
-Para dúvidas, sugestões ou colaborações, entre em contato:  
-**Maria Leticia** – marialeticiamotaa@gmail.com
 
 
