@@ -10,7 +10,7 @@ No frontend, utiliza **HTML**, **CSS** e **JavaScript** para implementar o CRUD 
 
 ## Funcionalidades
 
-- Landing page simples e elegante para apresentação da loja.
+- Landing page simples para apresentação da loja.
 - Página de cadastro e gerenciamento de produtos da loja.
 - Banco de dados SQLite para armazenar os produtos.
 - CRUD completo de produtos utilizando JavaScript para melhorar a interação.
